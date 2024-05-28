@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HappyBirthdayCampaignTest.BLL", "HappyBirthdayCampain.BLL\HappyBirthdayCampaignTest.BLL.csproj", "{F2B45529-963B-48EC-A70F-E99A391252F3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HappyBirthdayCampaignTest.BOL", "HappyBirthdayCampain.BOL\HappyBirthdayCampaignTest.BOL.csproj", "{934D00F1-20FB-485A-A6D0-6529E3CCCB88}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HappyBirthdayCampaignTest.DAL", "HappyBirthdayCampain.DAL\HappyBirthdayCampaignTest.DAL.csproj", "{BE6C1BE9-EB42-4540-A8CE-871AEBB09707}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HappyBirthdayCampaignTest.UI", "HappyBirthdayCampain.UI\HappyBirthdayCampaignTest.UI.csproj", "{F14F24F5-BF3B-446C-8F81-02218E7FF8E0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D03CB90F-5F58-42E4-B326-BDA6BFF1068F}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F2B45529-963B-48EC-A70F-E99A391252F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2B45529-963B-48EC-A70F-E99A391252F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2B45529-963B-48EC-A70F-E99A391252F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2B45529-963B-48EC-A70F-E99A391252F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{934D00F1-20FB-485A-A6D0-6529E3CCCB88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{934D00F1-20FB-485A-A6D0-6529E3CCCB88}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{934D00F1-20FB-485A-A6D0-6529E3CCCB88}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{934D00F1-20FB-485A-A6D0-6529E3CCCB88}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BE6C1BE9-EB42-4540-A8CE-871AEBB09707}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BE6C1BE9-EB42-4540-A8CE-871AEBB09707}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BE6C1BE9-EB42-4540-A8CE-871AEBB09707}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BE6C1BE9-EB42-4540-A8CE-871AEBB09707}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F14F24F5-BF3B-446C-8F81-02218E7FF8E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F14F24F5-BF3B-446C-8F81-02218E7FF8E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F14F24F5-BF3B-446C-8F81-02218E7FF8E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F14F24F5-BF3B-446C-8F81-02218E7FF8E0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0FCF18ED-4441-4E84-98B0-ECFBAE81690F}
+	EndGlobalSection
+EndGlobal

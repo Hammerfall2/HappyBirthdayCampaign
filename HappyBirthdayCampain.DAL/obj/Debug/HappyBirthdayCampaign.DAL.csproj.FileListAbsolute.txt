@@ -1,0 +1,15 @@
+C:\Users\ytsikov\Documents\GitHub\tmp-HappyBirthdayCampain\HappyBirthdayCampain.DAL\bin\Debug\HappyBirthdayCampain.DAL.dll.config
+C:\Users\ytsikov\Documents\GitHub\tmp-HappyBirthdayCampain\HappyBirthdayCampain.DAL\bin\Debug\HappyBirthdayCampain.DAL.dll
+C:\Users\ytsikov\Documents\GitHub\tmp-HappyBirthdayCampain\HappyBirthdayCampain.DAL\bin\Debug\HappyBirthdayCampain.DAL.pdb
+C:\Users\ytsikov\Documents\GitHub\tmp-HappyBirthdayCampain\HappyBirthdayCampain.DAL\bin\Debug\EntityFramework.dll
+C:\Users\ytsikov\Documents\GitHub\tmp-HappyBirthdayCampain\HappyBirthdayCampain.DAL\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ytsikov\Documents\GitHub\tmp-HappyBirthdayCampain\HappyBirthdayCampain.DAL\bin\Debug\HappyBirthdayCampain.BOL.dll
+C:\Users\ytsikov\Documents\GitHub\tmp-HappyBirthdayCampain\HappyBirthdayCampain.DAL\bin\Debug\HappyBirthdayCampain.BOL.pdb
+C:\Users\ytsikov\Documents\GitHub\tmp-HappyBirthdayCampain\HappyBirthdayCampain.DAL\bin\Debug\HappyBirthdayCampain.BOL.dll.config
+C:\Users\ytsikov\Documents\GitHub\tmp-HappyBirthdayCampain\HappyBirthdayCampain.DAL\bin\Debug\EntityFramework.xml
+C:\Users\ytsikov\Documents\GitHub\tmp-HappyBirthdayCampain\HappyBirthdayCampain.DAL\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ytsikov\Documents\GitHub\tmp-HappyBirthdayCampain\HappyBirthdayCampain.DAL\obj\Debug\HappyBirthdayCampaign.DAL.csproj.AssemblyReference.cache
+C:\Users\ytsikov\Documents\GitHub\tmp-HappyBirthdayCampain\HappyBirthdayCampain.DAL\obj\Debug\HappyBirthdayCampaign.DAL.csproj.CoreCompileInputs.cache
+C:\Users\ytsikov\Documents\GitHub\tmp-HappyBirthdayCampain\HappyBirthdayCampain.DAL\obj\Debug\HappyBirthdayCampaign.DAL.csproj.CopyComplete
+C:\Users\ytsikov\Documents\GitHub\tmp-HappyBirthdayCampain\HappyBirthdayCampain.DAL\obj\Debug\HappyBirthdayCampain.DAL.dll
+C:\Users\ytsikov\Documents\GitHub\tmp-HappyBirthdayCampain\HappyBirthdayCampain.DAL\obj\Debug\HappyBirthdayCampain.DAL.pdb

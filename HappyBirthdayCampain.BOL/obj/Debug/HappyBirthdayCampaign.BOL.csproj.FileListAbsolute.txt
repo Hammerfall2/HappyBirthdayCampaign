@@ -1,0 +1,7 @@
+C:\Users\ytsikov\Documents\GitHub\tmp-HappyBirthdayCampain\HappyBirthdayCampain.BOL\bin\Debug\HappyBirthdayCampain.BOL.dll.config
+C:\Users\ytsikov\Documents\GitHub\tmp-HappyBirthdayCampain\HappyBirthdayCampain.BOL\bin\Debug\HappyBirthdayCampain.BOL.dll
+C:\Users\ytsikov\Documents\GitHub\tmp-HappyBirthdayCampain\HappyBirthdayCampain.BOL\bin\Debug\HappyBirthdayCampain.BOL.pdb
+C:\Users\ytsikov\Documents\GitHub\tmp-HappyBirthdayCampain\HappyBirthdayCampain.BOL\obj\Debug\HappyBirthdayCampaign.BOL.csproj.AssemblyReference.cache
+C:\Users\ytsikov\Documents\GitHub\tmp-HappyBirthdayCampain\HappyBirthdayCampain.BOL\obj\Debug\HappyBirthdayCampaign.BOL.csproj.CoreCompileInputs.cache
+C:\Users\ytsikov\Documents\GitHub\tmp-HappyBirthdayCampain\HappyBirthdayCampain.BOL\obj\Debug\HappyBirthdayCampain.BOL.dll
+C:\Users\ytsikov\Documents\GitHub\tmp-HappyBirthdayCampain\HappyBirthdayCampain.BOL\obj\Debug\HappyBirthdayCampain.BOL.pdb

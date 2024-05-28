@@ -1,0 +1,7 @@
+D:\repos\HappyBirthdayCampainTest\HappyBirthdayCampain.BOL\bin\Debug\HappyBirthdayCampain.BOL.dll.config
+D:\repos\HappyBirthdayCampainTest\HappyBirthdayCampain.BOL\bin\Debug\HappyBirthdayCampain.BOL.dll
+D:\repos\HappyBirthdayCampainTest\HappyBirthdayCampain.BOL\bin\Debug\HappyBirthdayCampain.BOL.pdb
+D:\repos\HappyBirthdayCampainTest\HappyBirthdayCampain.BOL\obj\Debug\HappyBirthdayCampaignTest.BOL.csproj.AssemblyReference.cache
+D:\repos\HappyBirthdayCampainTest\HappyBirthdayCampain.BOL\obj\Debug\HappyBirthdayCampaignTest.BOL.csproj.CoreCompileInputs.cache
+D:\repos\HappyBirthdayCampainTest\HappyBirthdayCampain.BOL\obj\Debug\HappyBirthdayCampain.BOL.dll
+D:\repos\HappyBirthdayCampainTest\HappyBirthdayCampain.BOL\obj\Debug\HappyBirthdayCampain.BOL.pdb

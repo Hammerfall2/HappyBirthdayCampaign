@@ -1,0 +1,15 @@
+D:\repos\HappyBirthdayCampainTest\HappyBirthdayCampain.DAL\obj\Debug\HappyBirthdayCampaignTest.DAL.csproj.AssemblyReference.cache
+D:\repos\HappyBirthdayCampainTest\HappyBirthdayCampain.DAL\obj\Debug\HappyBirthdayCampaignTest.DAL.csproj.CoreCompileInputs.cache
+D:\repos\HappyBirthdayCampainTest\HappyBirthdayCampain.DAL\bin\Debug\HappyBirthdayCampain.DAL.dll.config
+D:\repos\HappyBirthdayCampainTest\HappyBirthdayCampain.DAL\bin\Debug\HappyBirthdayCampain.DAL.dll
+D:\repos\HappyBirthdayCampainTest\HappyBirthdayCampain.DAL\bin\Debug\HappyBirthdayCampain.DAL.pdb
+D:\repos\HappyBirthdayCampainTest\HappyBirthdayCampain.DAL\bin\Debug\EntityFramework.dll
+D:\repos\HappyBirthdayCampainTest\HappyBirthdayCampain.DAL\bin\Debug\EntityFramework.SqlServer.dll
+D:\repos\HappyBirthdayCampainTest\HappyBirthdayCampain.DAL\bin\Debug\HappyBirthdayCampain.BOL.dll
+D:\repos\HappyBirthdayCampainTest\HappyBirthdayCampain.DAL\bin\Debug\HappyBirthdayCampain.BOL.pdb
+D:\repos\HappyBirthdayCampainTest\HappyBirthdayCampain.DAL\bin\Debug\HappyBirthdayCampain.BOL.dll.config
+D:\repos\HappyBirthdayCampainTest\HappyBirthdayCampain.DAL\bin\Debug\EntityFramework.xml
+D:\repos\HappyBirthdayCampainTest\HappyBirthdayCampain.DAL\bin\Debug\EntityFramework.SqlServer.xml
+D:\repos\HappyBirthdayCampainTest\HappyBirthdayCampain.DAL\obj\Debug\HappyBir.F357AB87.Up2Date
+D:\repos\HappyBirthdayCampainTest\HappyBirthdayCampain.DAL\obj\Debug\HappyBirthdayCampain.DAL.dll
+D:\repos\HappyBirthdayCampainTest\HappyBirthdayCampain.DAL\obj\Debug\HappyBirthdayCampain.DAL.pdb
