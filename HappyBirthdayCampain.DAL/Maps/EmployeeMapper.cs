@@ -12,7 +12,7 @@ namespace HappyBirthdayCampain.DAL.Maps
 		{ 
 			return new BOL.EmployeeDTO()
 			{ 
-				Id = new BOL.EmployeeKey(){Id= src.Id },
+				Key = new BOL.EmployeeKey(){Id= src.Id },
 				UserName = src.UserName,
 				Password = src.Password,
 				FirstName = src.FirstName,

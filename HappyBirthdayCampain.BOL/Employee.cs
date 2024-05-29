@@ -10,7 +10,7 @@ namespace HappyBirthdayCampain.BOL
 
 	public partial class EmployeeDTO
     {
-        public EmployeeKey Id { get; set; }
+        public EmployeeKey Key { get; set; }
 
         public string UserName { get; set; }
 

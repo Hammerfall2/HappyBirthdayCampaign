@@ -12,7 +12,7 @@ namespace HappyBirthdayCampain.UI.Maps
 		{ 
 			return new Models.Employee()
 			{ 
-				Id = src.Id.Id,
+				Id = src.Key.Id,
 				FullName = src.FirstName + " " + src.LastName,
 			};
 		}

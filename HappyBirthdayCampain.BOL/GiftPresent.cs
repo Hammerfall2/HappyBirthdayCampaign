@@ -8,9 +8,9 @@ namespace HappyBirthdayCampain.BOL
         public int Id { get; set; }
     }
 
-    public partial class GiftPresent
+    public partial class GiftPresentDTO
     {
-        public GiftPresentKey Id { get; set; }
+        public GiftPresentKey Key { get; set; }
         public string GiftName { get; set; }
 
     }
