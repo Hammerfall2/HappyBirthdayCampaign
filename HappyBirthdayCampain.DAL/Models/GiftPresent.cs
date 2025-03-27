@@ -8,7 +8,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace HappyBirthdayCampain.DAL
 {
 
-    [Table("GiftPresentId")]
+    [Table("GiftPresent")]
     internal partial class GiftPresent
     {
         [Key]

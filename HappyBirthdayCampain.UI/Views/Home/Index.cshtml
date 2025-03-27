@@ -17,7 +17,7 @@
                     <div class="col-md-6">
 
                         @Html.TextBoxFor(m => m.UserName, new { @class = "form-control" })
-                        @Html.ValidationMessageFor(m => m.UserName, "", new { @class = "text-danger" })
+                        @*@Html.ValidationMessageFor(m => m.UserName, "", new { @class = "text-danger" })*@
                     </div>
                 </div>
                 <div class="form-group">
@@ -25,14 +25,13 @@
 
                     <div class="col-md-6">
 
-                        @Html.PasswordFor(m => m.Password, new { @class = "form-control" })
-                        @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
+                        @* @Html.PasswordFor(m => m.Password, new { @class = "password" })*@
+                        <span class="pass" id="test"> @Html.PasswordFor(m => m.Password, new { @class = "form-control", @id = "passwordId", @onchange = "onchangeevent();" }) </span>
+                        @*@Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })*@
 
                     </div>
+
                 </div>
-                @*<div hidden>
-                        @Html.LabelFor(m=>m.UserName)
-                    </div>*@
                 <div class="form-group">
                     <div class="col-md-offset-2 col-md-10">
                         <input type="submit" value="Log in" class="btn btn-default" />
@@ -43,3 +42,36 @@
     </div>
 
 </div>
+
+@section Scripts
+{
+    <script type="text/javascript">
+
+        function base64ToBytes(base64) {
+            const binString = atob(base64);
+            return Uint8Array.from(binString, (m) => m.codePointAt(0));
+        }
+
+        function bytesToBase64(bytes) {
+            const binString = Array.from(bytes, (byte) =>
+                String.fromCodePoint(byte),
+            ).join("");
+            return btoa(binString);
+        }
+
+
+
+        function onchangeevent() {
+            var purePassword = (document.getElementById('passwordId').value);
+            var encode = (bytesToBase64(new TextEncoder().encode(purePassword)));
+
+            //TODO remove
+            //  var decode = new TextDecoder().decode(base64ToBytes(encode));
+            //    console.log("Encode", encode);
+            //    console.log("Decode", decode);
+
+            $('#passwordId').val(encode);
+        }
+
+    </script>
+}

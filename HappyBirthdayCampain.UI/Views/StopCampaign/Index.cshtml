@@ -1,0 +1,77 @@
+﻿@*@model List<HappyBirthdayCampain.UI.Models.Campaign>*@
+@model HappyBirthdayCampain.UI.Models.StopCampaign
+
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+@using (Html.BeginForm("Index", "StopCampaign", new { ReturnUrl = ViewData.Model }, FormMethod.Post, new { id = "submitForm" }))
+{
+    <table class="table">
+        <tr>
+            <th>Campaign Year</th>
+            <th>Birthday Looser Name</th>
+            <th>Close Campaign</th>
+        </tr>
+
+
+        @if (Model.AvailableCampaigns != null)
+        {
+            for (var i = 0; i < Model.AvailableCampaigns.Count; i++)
+            {
+                <tr>
+                    <td>
+                        <span class="CampaignYear">@Model.AvailableCampaigns[i].CampaignYear</span>
+                    </td>
+                    <td>
+                        <span hidden class="BirthdayUserId"> @Model.AvailableCampaigns[i].BirthdayUserId</span>
+                        <span class="BirthdayUserName">@Model.AvailableCampaigns[i].BirthdayUserFullName </span>
+                    </td>
+                    <td>
+                        <button type="button" class="btn btn-default">Close</button>
+                    </td>
+                    <td>
+                        <span hidden class="UserStartedCampaignId"> @Model.StopCampaignData.UserStatedCampId</span>
+                    </td>
+                </tr>
+
+            }
+
+         }
+
+    </table>
+}
+
+@section Scripts
+{
+    <script type="text/javascript">
+
+        $(".btn").on("click", function () {
+            var index = $(".btn").index(this);
+
+            var obj = {
+                CampaignYear: $(".CampaignYear").eq(index).text(),
+                BirthdayUserId: $(".BirthdayUserId").eq(index).text(),
+                BirthdayUserFullName: $(".BirthdayUserName").eq(index).text(),
+                UserStatedCampId: $(".UserStartedCampaignId").eq(index).text()
+            };
+
+            $.ajax({
+                type: "POST",
+                url: "/StopCampaign/Index",
+                data: obj,
+                success: function (data) {
+                    alert(data.Title);
+                    window.location.href = "@Url.Content("~/Home/Index")";
+                },
+                error: function (data) {
+                    alert("error");
+                }
+            });
+        });
+
+    </script>
+}

@@ -1,7 +1,10 @@
 using HappyBirthdayCampain.BLL;
 using HappyBirthdayCampain.DAL;
+using HappyBirthdayCampain.BLL.PasswordManager;
+using System;
 using System.Web.Mvc;
 using Unity;
+using Unity.Injection;
 using Unity.Mvc5;
 
 namespace HappyBirthdayCampain.UI
@@ -18,9 +21,17 @@ namespace HappyBirthdayCampain.UI
 			// e.g. container.RegisterType<ITestService, TestService>();
 			
 			DependencyResolver.SetResolver(new UnityDependencyResolver(container));
-			//container.RegisterType<IVote, VoteCampaign>();
-			container.RegisterType<IUserManager, UserManager>();
-			container.RegisterType<ICampaignData, CampaignData>();
-		}
+			container.RegisterType<ICampaignManager, CampaignManager>();
+            container.RegisterType<IReportManager, ReportManager>();
+            container.RegisterType<IUserManager, UserManager>();
+			container.RegisterType<ICampaignDataDal, CampaignData>();
+            container.RegisterType<IPasswordVerifier, Argon2PasswordVerifier>();
+
+            container.RegisterType<IBllLogger, BllLogger>();
+            container.RegisterType<IDalLogger, DalLogger>();
+            container.RegisterType<IUiLogger, UiLogger>();
+            
+
+        }
 	}
 }

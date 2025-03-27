@@ -1,4 +1,4 @@
-﻿using System;
+﻿ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -16,5 +16,13 @@ namespace HappyBirthdayCampain.UI.Maps
 				FullName = src.FirstName + " " + src.LastName,
 			};
 		}
-	}
+
+        public static BOL.EmployeeKey MapVmIdToKeyBol(Models.Employee src)
+        {
+			return new BOL.EmployeeKey()
+			{
+				Id= src.Id
+            };
+        }
+    }
 }

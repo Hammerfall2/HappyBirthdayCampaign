@@ -12,15 +12,21 @@ namespace HappyBirthdayCampain.DAL
     [Table("Campaign")]
     internal partial class Campaign
     {
-        
-        //public int Id { get; set; }
 
         [Key, Column(Order = 0)]
-        public int BirthdayPresentUser { get; set; }
+        public int BirthdayUserId { get; set; }
 
         [Key, Column(Order = 1)]
-        public int UserStartedCampain { get; set; }
-
         public int CampaignYearDate { get; set; }
+
+        public string BirthdayUserFirstName { get; set; }
+        public string BirthdayUserLastName { get; set; }
+
+
+        public int UserCampainId { get; set; }
+
+        public bool IsCampaignActive { get; set; }
+        public string UserCampainFirstName { get; set; }
+        public string UserCampainLastName { get; set; }
     }
 }

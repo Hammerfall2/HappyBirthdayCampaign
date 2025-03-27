@@ -1,0 +1,91 @@
+﻿@model HappyBirthdayCampain.UI.Models.Vote
+@{
+    ViewBag.Title = "Index";
+}
+<h2>Report</h2>
+
+        <table class="table">
+            <tr>
+                <th>Campaign Year</th>
+                <th>Birthday Looser Name</th>
+                <th>Looser Name Started Campaign </th>
+                <th>Reports</th>
+            </tr>
+
+
+            @if (Model.OpenCampaign != null)
+            {
+                for (var i = 0; i < Model.OpenCampaign.Count; i++)
+                {
+                    <tr>
+                        <td>
+                            <span class="CampaignYear">@Model.OpenCampaign[i].CampaignYear</span>
+
+                        </td>
+                        <td>
+                            <span class="BirthdayUserFullName">@Model.OpenCampaign[i].BirthdayUserFullName </span>
+                            <span hidden class="BirthdayUserId">@Model.OpenCampaign[i].BirthdayUserId </span>
+                            <span hidden class="Title">@Model.Title </span>
+
+                        </td>
+                        <td>
+                            <span class="UserStartedCampaignFullName">@Model.OpenCampaign[i].UserStartedCampaignFullName</span>
+                            <span hidden class="UserStatedCampId">@Model.OpenCampaign[i].UserStatedCampId</span>
+                        </td>
+                        <td>
+                            <button type="button" class="btn btn-default">Get Report</button>
+                        </td>
+                        <td>
+
+                            <span hidden class="VoteUserId">@Model.VoteUserId</span>
+                            <span hidden class="VoteUser">@Model.VoteUserFullName</span>
+                            <span hidden class="IsVoteCampaignActive">@Model.OpenCampaign[i].IsCampaignActive</span>
+                    
+                        </td>
+                    </tr>
+                }
+            }
+
+        </table>
+
+
+@section Scripts
+{
+    <script type="text/javascript">
+
+
+        $(".btn").on("click", function (e) {
+
+            e.preventDefault();
+            var index = $(".btn").index(this);
+
+
+            var obj = {
+                BirthdayUserId: $(".BirthdayUserId").eq(index).text(),
+                UserStatedCampId: $(".UserStatedCampId").eq(index).text(),
+                CampaignYear: $(".CampaignYear").eq(index).text(),
+
+            };
+
+            $.ajax({
+                type: "POST",
+                url: "/Report/Result",
+                data: obj,
+                success: function (response) {
+                    var newDoc = document.open("text/html", "replace");
+                    newDoc.write(response);
+                    newDoc.close();
+                },
+                error: function (data) {
+                    alert("error");
+
+                },
+            });
+
+           
+        });
+
+
+    </script>
+}
+

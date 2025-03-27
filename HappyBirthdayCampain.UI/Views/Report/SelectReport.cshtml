@@ -1,0 +1,48 @@
+﻿@model HappyBirthdayCampain.UI.Models.SelectReportData
+@{
+    ViewBag.Title = "Please select report to display";
+}
+
+<h2>Reports</h2>
+
+<section id="loginForm">
+
+    @using (Html.BeginForm("Index", "Report", new { ReturnUrl = ViewData.Model }, FormMethod.Get, new { id = "submitForm" }))
+    {
+
+
+
+        <div class="row">
+            <div class="col-md-12">
+
+                @Html.DropDownListFor(l => l.StartYear, Model.SelectItemsStartYear)
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+
+                @Html.DropDownListFor(l => l.EndYear, Model.SelectItemsEndYear)
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+
+
+                @Html.DropDownListFor(l => l.BirthdayUserId.Id, Model.SelectItemsBirthdayUser)
+                @Html.HiddenFor(m => Model.VoteEmployee.FullName)
+                @Html.HiddenFor(m => Model.VoteEmployee.Id)
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="form-group">
+                <div class="col-sm-2">
+                    <input type="submit" name="Command" value="Go" class="btn btn-default" />
+                </div>
+            </div>
+        </div>
+    }
+</section>

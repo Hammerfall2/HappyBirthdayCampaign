@@ -14,6 +14,7 @@ namespace HappyBirthdayCampain.DAL
         }
 
         public virtual DbSet<Employee> Employees { get; set; }
+        public virtual DbSet<Campaign> Campaigns { get; set; }
         public virtual DbSet<GiftPresent> GiftPresents { get; set; }
         public virtual DbSet<Vote> Vote { get; set; }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)

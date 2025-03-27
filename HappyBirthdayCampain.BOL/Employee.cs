@@ -1,4 +1,4 @@
-//using System.Data.Entity.Spatial;
+using System;
 
 namespace HappyBirthdayCampain.BOL
 {
@@ -6,6 +6,7 @@ namespace HappyBirthdayCampain.BOL
 	public partial class EmployeeKey
     {
         public int Id { get; set; }
+
     }
 
 	public partial class EmployeeDTO
@@ -16,9 +17,12 @@ namespace HappyBirthdayCampain.BOL
 
         public string Password { get; set; }
 
+        public PasswordType PasswordType { get; set; }
+
         public string FirstName { get; set; }
 
         public string LastName { get; set; }
+
     }
 
 }

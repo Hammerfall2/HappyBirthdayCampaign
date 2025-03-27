@@ -1,0 +1,105 @@
+﻿@model HappyBirthdayCampain.UI.Models.Report
+@{
+    ViewBag.Title = "ReportData";
+}
+
+<h2>Report Data</h2>
+
+
+<div class="row">
+    <div class="col-md-6">
+        <h3 style="font-weight:bold">Birthday User:  @Model.BirthDayUserFullName</h3>
+    </div>
+
+    <div class="col-md-6">
+        <h3 style="font-weight:bold">Year:  @Model.CampaignYear</h3>
+
+    </div>
+
+    
+</div>
+<div class="row">
+
+    <div class="col-md-6">
+        <h4 style="font-weight:bold">Choosen Gift Present:  @Model.GiftPresentWinner</h4>
+
+    </div>
+</div>
+
+<br/>
+<div class="row">
+    <div class="col-md-6">
+        <h4 style="font-weight:bold">Vote summary:</h4>
+
+    </div>
+</div>
+
+<div class="table-responsive">
+
+    <table class="table">
+        <tr class="table bg-dark text-light">
+            <th>Gift Present Name</th>
+            <th>Present Count</th>
+        </tr>
+        
+        @{
+            int id = 0;
+            foreach (var key in Model.GiftPresentEmployees.Keys)
+            {
+
+            <tr class=" bg-dark text-light">
+                <td>
+                    <span class="Gift Name">@key.GiftName</span>
+
+                </td>
+                <td>
+                    <span class="Count">@Model.GiftPresentEmployees[key].Count </span>
+                </td>
+            </tr>
+                id++;
+            }
+            } 
+
+    </table>
+
+</div>
+
+
+<div class="row">
+    <div class="col-md-6">
+        <h4 style="font-weight:bold">Vote Details:</h4>
+
+    </div>
+</div>
+
+<div class="table-responsive">
+    <table class="table bg-dark text-light">
+        <tr>
+            <th>Vote UserName</th>
+            <th>Gift Present Name</th>
+        </tr>
+        @{ 
+            id = 0;
+            for (var i = 0; i < Model.VoteUserFullName.Count; i++)
+            {
+
+                <tr class="bg-dark text-light">
+                    <td>
+                        <span class="CampaignYear">@Model.VoteUserFullName[i]</span>
+
+                    </td>
+                    <td>
+                        <span class="BirthdayUserName">@Model.GiftPresentName[i]</span>
+                    </td>
+              
+                </tr>
+                id++;
+            }
+        }
+    </table>
+
+</div>
+
+
+
+

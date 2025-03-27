@@ -1,0 +1,72 @@
+﻿@model HappyBirthdayCampain.UI.Models.Employee
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Hello @Model.FullName</h2>
+
+<section id="loginForm">
+
+    @using (Html.BeginForm("Index", "StartCampaign", new { ReturnUrl = ViewData.Model }, FormMethod.Get, new { id = "submitForm" }))
+    {
+        @Html.HiddenFor(y => y.Id)
+        @Html.HiddenFor(y => y.FullName)
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="col-sm-2">
+
+                    <input type="submit" name="submit" value="StartCampaign" class="btn btn-default" />
+                </div>
+            </div>
+        </div>
+    }
+    @using (Html.BeginForm("Index", "StopCampaign", new { ReturnUrl = ViewData.Model }, FormMethod.Get, new { id = "submitForm" }))
+    {
+        @Html.HiddenFor(y => y.Id)
+        @Html.HiddenFor(y => y.FullName)
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="col-sm-2">
+
+                    <input type="submit" name="submit" value="StopCampaign" class="btn btn-default" />
+
+                </div>
+            </div>
+        </div>
+    }
+    @using (Html.BeginForm("Index", "Vote", new { ReturnUrl = ViewData.Model }, FormMethod.Get, new { id = "submitForm" }))
+    {
+        @Html.HiddenFor(y => y.Id)
+        @Html.HiddenFor(y => y.FullName)
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="col-sm-2">
+
+                    <input type="submit" name="submit" value="Vote" class="btn btn-default" />
+                </div>
+            </div>
+        </div>
+    }
+    @using (Html.BeginForm("SelectReport", "Report", new { ReturnUrl = ViewData.Model }, FormMethod.Get, new { id = "submitForm" }))
+    {
+        @Html.HiddenFor(y => y.Id)
+        @Html.HiddenFor(y => y.FullName)
+        <div class="row">
+            <div class="col-md-12">
+                <div class="col-sm-2">
+
+                    <input type="submit" name="submit" value="Report" class="btn btn-default" />
+
+                </div>
+            </div>
+        </div>
+
+    }
+
+    </section>
+
+

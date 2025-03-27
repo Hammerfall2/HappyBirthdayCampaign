@@ -35,6 +35,11 @@
 		/// за коя година е кампанията
 		/// </summary>
         public int CampaignYearDate { get; set; }
+
+        /// <summary>
+        /// Статус на кампанията активна/неактивна 
+        /// </summary>
+        public bool IsActive { get; set; }
     }
 
 }

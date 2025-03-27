@@ -2,7 +2,7 @@
 
 namespace HappyBirthdayCampain.BOL
 {
-	public class VotingKey
+	public class VoteKey
     {
 
         ///<summary>
@@ -14,10 +14,10 @@ namespace HappyBirthdayCampain.BOL
         public EmployeeKey VotingUser { get; set; }
     }
 
-    public class VotingDTO
+    public class VoteDTO
     {
 
-		public VotingKey Key { get; set; }
+		public VoteKey Key { get; set; }
 
 		/// <summary>
 		/// в коя кампания се гласува

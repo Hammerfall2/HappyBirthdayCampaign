@@ -34,7 +34,10 @@
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Voting.cs" />
+    <Compile Include="EnumPasswordType.cs" />
+    <Compile Include="Extension.cs" />
+    <Compile Include="Report.cs" />
+    <Compile Include="Vote.cs" />
     <Compile Include="Campaign.cs" />
     <Compile Include="Employee.cs" />
     <Compile Include="GiftPresent.cs" />

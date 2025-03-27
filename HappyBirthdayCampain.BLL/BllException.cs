@@ -8,6 +8,9 @@ namespace HappyBirthdayCampain.BLL
 {
     public class BllException : Exception
     {
-        public BllException(string message) : base(message) { }
+        public BllException() : base() { }
+        public BllException(string Meassage) : base(Meassage) { }
+        public BllException(string Meassage, Exception innerException) : base(Meassage,innerException) { }
+
     }
 }

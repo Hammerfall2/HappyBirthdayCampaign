@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewBag.Title = "Error";
+}
+
+<h2>Error</h2>
+
+@{ 
+    foreach(var data in TempData.Values.ToList())
+            {
+                <div>
+                    @data
+                </div>
+            }
+}
+

@@ -1,11 +1,14 @@
 //using System.Data.Entity.Spatial;
 
+using System;
+
 namespace HappyBirthdayCampain.BOL
 {
 		
 	public partial class GiftPresentKey
     {
         public int Id { get; set; }
+
     }
 
     public partial class GiftPresentDTO

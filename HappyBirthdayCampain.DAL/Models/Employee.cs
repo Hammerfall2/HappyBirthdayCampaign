@@ -19,8 +19,10 @@ namespace HappyBirthdayCampain.DAL
         [StringLength(50)]
         public string UserName { get; set; }
 
-        [StringLength(50)]
+        [StringLength(300)]
         public string Password { get; set; }
+
+        public int PasswordType { get; set; }
 
         [StringLength(50)]
         public string FirstName { get; set; }

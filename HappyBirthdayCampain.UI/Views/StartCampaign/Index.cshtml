@@ -1,0 +1,55 @@
+﻿@model HappyBirthdayCampain.UI.Models.StartCampaign
+
+@{
+    ViewBag.Title = "Start Campaign";
+}
+
+<h2>Start Capaign </h2>
+
+
+<section id="loginForm">
+
+    @using (Html.BeginForm("Index", "StartCampaign", new { ReturnUrl = ViewData.Model }, FormMethod.Post, new { id = "submitForm" }))
+    {
+
+        <div class="row">
+            <div class="col-md-12">
+
+
+                @Html.DropDownListFor(l => l.StartCampaignData.BirthdayUserId, Model.GetListBirthdayUsers)
+
+                @for (int j = 0; j < Model.GetListBirthdayUsers.Count; j++)
+                {
+
+                    @Html.HiddenFor(m => Model.GetListBirthdayUsers[j].Text);
+                    @Html.HiddenFor(m => Model.GetListBirthdayUsers[j].Value);
+                }
+
+                @Html.HiddenFor(m => Model.StartCampaignData.UserStatedCampId)
+                @Html.HiddenFor(m => Model.StartCampaignData.UserStartedCampaignFullName)
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-12">
+
+                @Html.DropDownListFor(l => l.StartCampaignData.CampaignYear, Model.GetListBirhdayYears)
+                @for (int j = 0; j < Model.GetListBirhdayYears.Count; j++)
+                {
+
+                    @Html.HiddenFor(m => Model.GetListBirhdayYears[j].Text);
+                    @Html.HiddenFor(m => Model.GetListBirhdayYears[j].Value);
+                }
+            </div>
+        </div>
+
+            <div class="row">
+                <div class="form-group">
+                    <div class="col-sm-2">
+                        <input type="submit" name="Command" value="Campaign" class="btn btn-default" />
+                    </div>
+                </div>
+            </div>
+            }
+</section>

@@ -1,0 +1,114 @@
+﻿
+@{@model HappyBirthdayCampain.UI.Models.Vote
+ViewBag.Title = "Vote";
+}
+
+<h2>Vote</h2>
+
+@using (Html.BeginForm("Index", "Vote", new { ReturnUrl = ViewData.Model }, FormMethod.Post, new { id = "submitForm" }))
+{
+    <table class="table">
+        <tr>
+            <th>Campaign Year</th>
+            <th>Birthday Looser Name</th>
+            <th>Present</th>
+            <th>Vote</th>
+        </tr>
+
+
+        @if (Model.OpenCampaign != null)
+        {
+            for (var i = 0; i < Model.OpenCampaign.Count; i++)
+            {
+                <tr>
+                    <td>
+                        <span class="CampaignYear">@Model.OpenCampaign[i].CampaignYear</span>
+
+                    </td>
+                    <td>
+                        <span hidden class="BirthdayUserId">@Model.OpenCampaign[i].BirthdayUserId</span>
+                        <span class="BirthdayUserFullName">@Model.OpenCampaign[i].BirthdayUserFullName</span>
+
+                    </td>
+                    <td>
+                        
+                        <span id=@i onclick="GetSelectPresent(this)" class="GiftPresentId_1">@Html.DropDownList("Gift", Model.GetListGiftPresent) </span>
+                    </td>
+
+                    <td>
+                        <button type="button" class="btn btn-default">Vote</button>
+                    </td>
+
+
+                    <td>
+                        <span hidden class="UserStartedCampaignName">@Model.OpenCampaign[i].UserStartedCampaignFullName</span>
+                        <span hidden class="UserStartedCampaignId">@Model.OpenCampaign[i].UserStatedCampId</span>
+                        <span hidden class="VoteUserId">@Model.VoteUserId</span>
+                        <span hidden class="VoteUser">@Model.VoteUserFullName</span>
+                        <span hidden class="IsVoteCampaignActive">@Model.OpenCampaign[i].IsCampaignActive</span>
+                    </td>
+                </tr>
+
+            }
+
+
+        }
+
+    </table>
+    @section Scripts
+{
+        <script type="text/javascript">
+
+
+            var giftPresentName = {};
+            var giftPresentId = {};
+
+            function GetSelectPresent(elem) {
+                
+                var id = $(elem).attr("id");
+                giftPresentName[id] = $(elem).find('option:selected').text();
+                giftPresentId[id] = $(elem).find('option:selected').val();
+            }
+
+            $(".btn").on("click", function () {
+              
+                var index = $(".btn").index(this);
+                
+                
+                var obj = {
+                    CampaignYear: $(".CampaignYear").eq(index).text(),
+                    BirthdayUserId: $(".BirthdayUserId").eq(index).text(),
+                    BirthdayUserFullName: $(".BirthdayUserFullName").eq(index).text(),
+                    UserCampaignUserId: $(".UserStartedCampaignId").eq(index).text(),
+                    UserCampaignFullName: $(".UserStartedCampaignName").eq(index).text(),
+                    GiftPresentName: giftPresentName[index],
+                    GiftPresentId: giftPresentId[index],
+                    VoteUserFullName: $(".VoteUser").eq(index).text(),
+                    VoteUserId: $(".VoteUserId").eq(index).text(),
+                    IsVoteCampaignActive: $(".IsVoteCampaignActive").eq(index).text()
+
+                };
+                console.log(obj)
+
+                $.ajax({
+                    type: "POST",
+                    url: "/Vote/Index",
+                    data: obj,
+                    success: function (data) {
+                        alert(data.Title);
+                        location.href = "/Home/Index";
+                      
+                    },
+                    error: function (data) {
+                        alert("error");
+                        
+                    }
+                });
+            });
+
+        </script>
+
+       
+    }
+}
+
